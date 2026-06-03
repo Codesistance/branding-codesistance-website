@@ -32,21 +32,35 @@
     <!-- <link rel="stylesheet" href="assets/css/vendor/plugins.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css"> -->
 	<style>
-    html, body {
-        overflow-y: auto !important;
-        overflow-x: hidden !important;
-        height: auto !important;
-    }
-    
-    /* Safely completely deletes any leftover stuck backdrop overlays blocking mouse clicks */
-    .offcanvas-backdrop.show, 
-    .modal-backdrop.show {
-        display: none !important;
-        opacity: 0 !important;
-        visibility: hidden !important;
-        pointer-events: none !important;
-    }
-</style>
+        /* Force the core browser viewport layers to remain unlocked */
+        html {
+            overflow: auto !important;
+            height: auto !important;
+        }
+
+        body {
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            height: auto !important;
+            position: relative !important;
+        }
+
+        /* Tear down any lingering theme scroll-lock wrappers or animation blocks */
+        .main-wrapper, 
+        #main-wrapper,
+        [data-aos] {
+            overflow: visible !important;
+            height: auto !important;
+            transform: none !important;
+        }
+        
+        /* Eliminate any lingering bootstrap invisible background modal sheets */
+        .offcanvas-backdrop, 
+        .modal-backdrop {
+            display: none !important;
+            pointer-events: none !important;
+        }
+    </style>
 
 </head>
 
