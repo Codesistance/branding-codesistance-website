@@ -31,118 +31,93 @@
     <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
     <!-- <link rel="stylesheet" href="assets/css/vendor/plugins.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css"> -->
-	<style>
-        /* Force the core browser viewport layers to remain unlocked */
-        html {
-            overflow: auto !important;
-            height: auto !important;
-        }
-
-        body {
+<style>
+        /* Force the core browser viewport to stay completely unlocked */
+        html, body {
             overflow-y: auto !important;
             overflow-x: hidden !important;
             height: auto !important;
-            position: relative !important;
         }
 
-        /* Tear down any lingering theme scroll-lock wrappers or animation blocks */
-        .main-wrapper, 
-        #main-wrapper,
-        [data-aos] {
-            overflow: visible !important;
-            height: auto !important;
-            transform: none !important;
-        }
-        
-        /* Eliminate any lingering bootstrap invisible background modal sheets */
+        /* Prevent broken background overlay layers from freezing mouse scrolling */
         .offcanvas-backdrop, 
         .modal-backdrop {
             display: none !important;
+            visibility: hidden !important;
             pointer-events: none !important;
         }
     </style>
-
 </head>
 
 <body>
 
     <div class="main-wrapper">
 
-
-        <!-- Preloader start -->
-        <div id="preloader">
-            <div class="preloader">
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-        <!-- Preloader End -->
-
-        <!-- Header Start  -->
         <div id="header" class="section header-section">
-
             <div class="container">
 
-                <!-- Header Wrap Start  -->
-               <div class="header-wrap">
+                <div class="header-wrap">
 
-    <div class="header-logo">
-        <a href="index.html">
-            <img src="assets/images/logo.png" alt="Codesistance Logo">
-        </a>
-    </div>
-
-    <div class="header-menu d-none d-lg-block">
-        <ul class="main-menu">
-            <li class="active-menu">
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="about.html">About Us</a>
-            </li>
-            <li><a href="service.html">Services</a>
-                <ul class="sub-menu">
-                    <li><a href="full-stack.html">Full-Stack Development</a></li>
-                    <li><a href="architecture.html">Enterprise Architecture</a></li>
-                    <li><a href="iot.html">IoT Integration</a></li>
-                    <li><a href="cloud.html">Cloud Strategy</a></li>
-                </ul>
-            </li>
-            <li><a href="blog.html">Insights</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
-
-    <div class="header-meta">
-        
-        <div class="header-search">
-            <a class="search-btn" href="#"><i class="flaticon-loupe"></i></a>
-            <div class="search-wrap">
-                <div class="search-inner">
-                    <i id="search-close" class="flaticon-close search-close"></i>
-                    <div class="search-cell">
-                        <form action="#">
-                            <div class="search-field-holder">
-                                <input class="main-search-input" type="search" placeholder="Search insights, services...">
-                            </div>
-                        </form>
+                    <div class="header-logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo.png" alt="Codesistance Logo">
+                        </a>
                     </div>
+
+                    <div class="header-menu d-none d-lg-block">
+                        <ul class="main-menu">
+                            <li class="active-menu">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li><a href="service.html">Services</a>
+                                <ul class="sub-menu">
+                                    <li><a href="full-stack.html">Full-Stack Development</a></li>
+                                    <li><a href="architecture.html">Enterprise Architecture</a></li>
+                                    <li><a href="iot.html">IoT Integration</a></li>
+                                    <li><a href="cloud.html">Cloud Strategy</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="blog.html">Insights</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="header-meta">
+                        <div class="header-search">
+                            <a class="search-btn" href="#"><i class="flaticon-loupe"></i></a>
+                            <div class="search-wrap">
+                                <div class="search-inner">
+                                    <i id="search-close" class="flaticon-close search-close"></i>
+                                    <div class="search-cell">
+                                        <form action="#">
+                                            <div class="search-field-holder">
+                                                <input class="main-search-input" type="search" placeholder="Search insights, services...">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="header-btn d-none d-xl-block">
+                            <a class="btn" href="contact.html">Get Started</a>
+                        </div>
+                        
+                        <div class="header-toggle d-lg-none">
+                            <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
-            </div>
+                </div>
         </div>
-        <div class="header-btn d-none d-xl-block">
-            <a class="btn" href="contact.html">Get Started</a>
-        </div>
-        
-        <div class="header-toggle d-lg-none">
-            <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-        </div>
-    </div>
         <!-- Header End -->
 
         <!-- Offcanvas Start-->
