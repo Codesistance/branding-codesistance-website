@@ -9151,3 +9151,9 @@ textarea:-ms-input-placeholder {
 .progress-wrap-3 svg.progress-circle path {
   stroke: #ff5538;
 }
+/* Emergency fix for stuck bootstrap mobile menu overflow scroll freezes */
+html, body {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    height: auto !important;
+}
